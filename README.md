@@ -21,8 +21,14 @@ By asking the user to type in an address, a type of store and a search radius we
 + Open `home.html`in the browser of your choice
   
  ## Example Call
-Insert Example Call here.
+After launch the user can type in the following information:
++ Current location - this parameter will be used to start a google places request and find the location of the user. We choose the first entry in the list of results given by google.
++ Type of store - right now the options are Gorcery/Supermarket, Pharmacy and Bakery. This input is fed directly to the google places request according to the place type identified by google.
++ Travel distance - this parameter defines a search radius for shops around the location of the user and is a parameter of the Populartimes library. 
+
+After pressing submit the user has to wait some time depending on the number of stores available in the specified radius. The results are filtered according to the availability of popular times data and if they are currently open.
 ![RequestScreen](/images/InitialRequest.png)
+The result is presented as a link to google maps presenting the name of the store.
 ![ResultScreen](/images/Result.png)
 ![MapsResultScreen](/images/MapsResult.png)
 
