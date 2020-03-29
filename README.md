@@ -28,8 +28,13 @@ After launch the user can type in the following information:
 
 After pressing submit the user has to wait some time depending on the number of stores available in the specified radius. The results are filtered according to the availability of popular times data and if they are currently open.
 ![RequestScreen](/images/InitialRequest.png)
-The result is presented as a link to google maps presenting the name of the store.
+We include two types of data to find out the least crowded store:
++ Current activity data if available
++ Average activity data at current time
+The store with the smallest popularity value is selected.
+The result is presented with its name as a link. 
 ![ResultScreen](/images/Result.png)
+By clicking the link the user can see the place on google maps.
 ![MapsResultScreen](/images/MapsResult.png)
 
  ## Limitations
