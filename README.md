@@ -6,7 +6,7 @@ By asking the user to type in an address, a type of store and a search radius we
 
 ## How to get started
 + Get a Google Maps API key https://developers.google.com/places/web-service/get-api-key
-+ replace the dummy API key with your own key
++ replace the dummy API key in the GroVID19 Python code with your own key
 + Install Populartimes from github using `pip install --upgrade git+https://github.com/m-wrzr/populartimes`
 + Install NumPy using `pip install numpy`
 + Install Flask (Please add input for this Sanket)
