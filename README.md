@@ -2,14 +2,14 @@
 GroVID19 helps users identify the least crowded stores in their vicinity. It allows the user to find a 'Grocery Store', a 'Pharmacy' or a 'Bakery', in their chosen vicinity, with the least crowds. Using this tool will allow the user to make an informed decision regarding the probability of availability of goods, and avoid crowded stores, thereby mitigating the spread of CoVID-19.
 
 This tool was created during the CodeVsCovid19 Hackathon.
-This tool tackles the issue of panic buying during the Covid19 pandemic. As people are stocking up on essential items such as canned foods, medicines, toilet paper, etc., supermarkets, pharmacies and similar stores are experiencing a large surge in customers - popularly referred to as 'panic buyers'. GroVID19 aims to "flatten the curve" by helping the customers choose the least crowded stores in their vicinity. This helps in easing the pressure on the supply-chain, while helping prevent large crowds from gathering in a single store.
+It tackles the issue of panic buying during the Covid19 pandemic. As people are stocking up on essential items such as canned foods, medicines, toilet paper, etc., supermarkets, pharmacies and similar stores are experiencing a large surge in customers - popularly referred to as 'panic buyers'. GroVID19 aims to "flatten the curve" by helping the customers choose the least crowded stores in their vicinity. This helps in easing the pressure on the supply-chain, while helping prevent large crowds from gathering in a single store.
 
 GroVID19 uses realtime activity data of the stores (if available) along with their average activity data. This is achieved using the Google Maps Places API (https://developers.google.com/places/web-service/intro?hl=de) together with the on top-built Populartimes repository (https://github.com/m-wrzr/populartimes) to use the Places API's popular times feature.
 
 The graph below shows the loads on supermarkets in Singapore on the 29th of March, 2020 at 1 pm. There was no noticable panic buying going on in Singapore. However, there is a noticable mismatch between the loads of different grocery stores.
 ![Marina Graphic](/images/MarinaBaySands_Data.png)
 
-While crowd surges are not a pressing concerns during ordinary times, extra-ordinary times like the current ones require us all to be extra-cautious, and uniting together (in spirit, but not physically!) to prevent the spread of CoVID-19.
+While crowd surges are not a pressing concern during ordinary times, extra-ordinary times like the current ones require us all to be extra-cautious, and uniting together (in spirit, but not physically!) to prevent the spread of CoVID-19.
 
 
 ## How to get started
