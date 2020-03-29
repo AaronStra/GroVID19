@@ -6,7 +6,7 @@ It tackles the issue of panic buying during the Covid19 pandemic. As people are 
 
 GroVID19 uses realtime activity data of the stores (if available) along with their average activity data. This is achieved using the Google Maps Places API (https://developers.google.com/places/web-service/intro?hl=de) together with the on top-built Populartimes repository (https://github.com/m-wrzr/populartimes) to use the Places API's popular times feature.
 
-The graph below shows the loads on supermarkets in Singapore on the 29th of March, 2020 at 1 pm. There was no noticable panic buying going on in Singapore. However, there is a noticable mismatch between the loads of different grocery stores.
+The graph below shows the loads on supermarkets in Singapore on the 29th of March, 2020 at 1 pm. The stores are sorted according to their load and identified with an index ("Store Index"). There was no noticable panic buying going on in Singapore. However, there is a noticable mismatch between the loads of different grocery stores as can be seen by the difference to the red average line.
 ![Marina Graphic](/images/MarinaBaySands_Data.png)
 
 While crowd surges are not a pressing concern during ordinary times, extra-ordinary times like the current ones require us all to be extra-cautious, and uniting together (in spirit, but not physically!) to prevent the spread of CoVID-19.
