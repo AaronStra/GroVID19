@@ -53,8 +53,9 @@ To identify supermarkets and grocery stores we use the predefined location types
 ### Giving the User more Choice
 Alternatively to showing the least crowded store it would be possible to present a ranking of stores. This way the user can adjust the selection scheme to his needs. Also useless picks like discussed recently would be omitted by the user.
 
-### Gather and Evaluate Data independently of Google
-
+### User Account and Remaining Stocks Value
+Running the system on a server with multiple clients, users could create accounts and setup their region of interest.
+Then, a database could be created collecting the activity up to the point of request. Based on this a "remaining stocks" value could be calculated and the user would get recommendations based on this value. A series of unusually high numbers of activity would indicate a bad choice for the user.
 
  
  
