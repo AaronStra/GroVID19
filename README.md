@@ -27,17 +27,17 @@ In order to use GroVID19 on a Linux system:
 + Install NumPy using `pip3 install numpy`
 + Install Pandas using `pip3 install pandas`
 + Open a console and change the directory where you have cloned the GroVID19 repository
-+ Enter `export FLASK_APP=grovid19_v2.py`
++ Enter `export FLASK_APP=grovid19_vp.py`
 + Enter `flask run`
 + Open `home.html`in the browser of your choice
   
  ## Example Call
-After launch the user can type in the following information:
-+ Current location - this parameter will be used to start a google places request and find the location of the user. We choose the first entry in the list of results given by google.
-+ Type of store - right now the options are Gorcery/Supermarket, Pharmacy and Bakery. This input is fed directly to the google places request according to the place type identified by google.
-+ Travel distance - this parameter defines a search radius for shops around the location of the user and is a parameter of the Populartimes library. 
+In the browser window, the user should provide the following preferences:
++ Current location - this parameter will be used to start a google places request and find the location of the user. We choose the first entry in the list of results given by Google.
++ Type of store - the user can choose a category of stores - 'Grocery', 'Pharmacy' and 'Bakery'. The list of stores is directly obtained from the data provided by the Google Place API.
++ Travel distance - this parameter defines a search radius for stores around the location of the user 
 
-After pressing submit the user has to wait some time depending on the number of stores available in the specified radius. The results are filtered according to the availability of popular times data and if they are currently open.
+After pressing submit the user has to wait some time depending on the number of stores available in the specified radius. The results are filtered according to the availability of activity data and whether they are open at the time of the search.
 ![RequestScreen](/images/InitialRequest.png)
 We include two types of data to find out the least crowded store:
 + Current activity data if available
@@ -49,20 +49,20 @@ By clicking the link the user can see the place on google maps.
 ![MapsResultScreen](/images/MapsResult.png)
 
  ## Limitations
- The usefulness of the current version our tool depends on the following factors:
+ This prototype version of GroVID19 is limited by following following factors:
  
  ### Accuracy of Google Maps activity data
  The reliability of google's popular times data can be questioned as it is done here https://www.linkedin.com/pulse/how-accurate-googles-popular-time-function-m%C3%A9lissa-sanchot. Compared with evaluations based on camera footage the Google results seem to lack major features of the actual activity.
  
  ### Availability of Popular Times Data
-Depending on the region, popular times data could be scarce. We already added the average activity to our evaluation as current popularity data is even harder to get from nearby places.
+Depending on the region, real-time activity data could be scarce. For stores lacking the real-time activity data, GroVID19 uses their average activity data to identify the least crowded stores.
  
  ### Relevance of Search Results
-To identify supermarkets and grocery stores we use the predefined location types (https://developers.google.com/places/supported_types). However, as some companies define themselfes as grocery stores while they're actually selling health and beauty products or are actually petrol stations the top result could be useless for the user.
+To identify supermarkets and grocery stores GroVID19 uses the predefined location types (https://developers.google.com/places/supported_types). However in the dataset, some companies are mis-tagged as 'Grocery Stores' while they're actually 'Health and Beauty' or other 'Utility' stores. This may cause some results to not be of the best relevance for the user.
 
 ## Potential Improvements and Extensions
 ### Giving the User more Choice
-Alternatively to showing the least crowded store it would be possible to present a ranking of stores. This way the user can adjust the selection scheme to his needs. Also useless picks like discussed recently would be omitted by the user.
+A possible solution to overcome the mis-tagged stores is by providing the users with a short list (3 - 5) of stores, satisfying the user's preferences. Depending on the selections by the user, feedback can be collected to omit mis-tagged stores.
 
 ### User Account and Remaining Stocks Value
 Running the system on a server with multiple clients, users could create accounts and setup their region of interest.
