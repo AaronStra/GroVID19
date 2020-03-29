@@ -55,7 +55,7 @@ Alternatively to showing the least crowded store it would be possible to present
 
 ### User Account and Remaining Stocks Value
 Running the system on a server with multiple clients, users could create accounts and setup their region of interest.
-Then, a database could be created collecting the activity up to the point of request. Based on this a "remaining stocks" value could be calculated and the user would get recommendations based on this value. A series of unusually high numbers of activity would indicate a bad choice for the user.
+Then, a database could be created collecting the activity at stores up to the point of request. Based on this, a "remaining stocks" value could be calculated and the user would get recommendations based on this value. A series of unusually high numbers of activity at a store in the morning would indicate a bad choice for the user.
 
  
  
