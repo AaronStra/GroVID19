@@ -1,21 +1,32 @@
 # GroVID19
+GroVID19 helps users identify the least crowded stores in their vicinity. It allows the user to find a 'Grocery Store', a 'Pharmacy' or a 'Bakery', in their chosen vicinity, with the least crowds. Using this tool will allow the user to make an informed decision regarding the probability of availability of goods, and avoid crowded stores, thereby mitigating the spread of CoVID-19.
+
 This tool was created during the CodeVsCovid19 Hackathon.
-We tackeld the issue of panic buying during the Covid19 pandemic in early 2020. As people started stocking toilet paper and other basic goods an even distribution of shoppers to grocery stores can help to alleviate temporary shortages. We hope to achieve this by pointing users to stores in their surroundings that are the least crowded. We use realtime activity data if available and average activity data to complement. We used the Google Maps Places API (https://developers.google.com/places/web-service/intro?hl=de) together with the on top built Populartimes library (https://github.com/m-wrzr/populartimes) to use the first's popular times feature.
+This tool tackles the issue of panic buying during the Covid19 pandemic. As people are stocking up on essential items such as canned foods, medicines, toilet paper, etc., supermarkets, pharmacies and similar stores are experiencing a large surge in customers - popularly referred to as 'panic buyers'. GroVID19 aims to "flatten the curve" by helping the customers choose the least crowded stores in their vicinity. This helps in easing the pressure on the supply-chain, while helping prevent large crowds from gathering in a single store.
+
+GroVID19 uses realtime activity data of the stores (if available) along with their average activity data. This is achieved using the Google Maps Places API (https://developers.google.com/places/web-service/intro?hl=de) together with the on top-built Populartimes repository (https://github.com/m-wrzr/populartimes) to use the Places API's popular times feature.
 
 The graph below shows the loads on supermarkets in Singapore on the 29th of March, 2020 at 1 pm. There was no noticable panic buying going on in Singapore. However, there is a noticable mismatch between the loads of different grocery stores.
 ![Marina Graphic](/images/MarinaBaySands_Data.png)
-For customers this is not too big of a problem besides the crowd itself and longer queuing times. However, in times of panic buying this could mean that people heading to crowded stores won't find basic goods anymore.
 
-Panic buying seems to be an acute situation. We made the assumption that in such a case the activity at grocery stores may be skewed towards earlier hours in the day, but a relatively low loaded store will also be less loaded than others in times of shortage.
+While crowd surges are not a pressing concerns during ordinary times, extra-ordinary times like the current ones require us all to be extra-cautious, and uniting together (in spirit, but not physically!) to prevent the spread of CoVID-19.
+
 
 ## How to get started
+GroVID19 is implemented as a Flask app. An HTML form is used to get the preferences from the user which are then transferred to the Flask app using the POST method. The app uses the Google Maps Places API along with the PopularTimes repository, to search for the user's location, identify relevant stores in the chosen vicinity, and then identify the least crowded store, according to the chosen specifications.
+
+Please ensure you have python3 installed in your system
+In order to use GroVID19 on a Linux system:
+
++ Install pip for python3 using `sudo apt install python3-pip`
 + Clone/Download this repository
 + Get a Google Maps API key https://developers.google.com/places/web-service/get-api-key
 + Replace the dummy API key in the GroVID19 Python code with your own key
-+ Install Populartimes from github using `pip install --upgrade git+https://github.com/m-wrzr/populartimes`
-+ Install NumPy using `pip install numpy`
-+ Install Flask `pip install flask`
-+ Open a console and change the directory to the GroVID19 directory
++ Install Flask `pip3 install flask`
++ Install Populartimes from github using `pip3 install --upgrade git+https://github.com/m-wrzr/populartimes`
++ Install NumPy using `pip3 install numpy`
++ Install Pandas using `pip3 install pandas`
++ Open a console and change the directory where you have cloned the GroVID19 repository
 + Enter `export FLASK_APP=grovid19_v2.py`
 + Enter `flask run`
 + Open `home.html`in the browser of your choice
