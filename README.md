@@ -22,6 +22,9 @@ By asking the user to type in an address, a type of store and a search radius we
   
  ## Example Call
 Insert Example Call here.
+![RequestScreen](/images/InitialRequest.png)
+![ResultScreen](/images/Result.png)
+![MapsResultScreen](/images/MapsResult.png)
 
  ## Limitations
  The usefulness of our tool depends on the following factors:
