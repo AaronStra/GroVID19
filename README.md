@@ -21,5 +21,10 @@ Insert Example Call here.
  ### Accuracy of Google Maps activity data
  The reliability of googles popular times data can be questioned as it is done here https://www.linkedin.com/pulse/how-accurate-googles-popular-time-function-m%C3%A9lissa-sanchot. Compared with evaluations based on camera footage the Google results seem to lack major features of the actual activity.
  
+ ### Availability of Popular Times Data
+ Depending on the region popular times data could be scarce. We already added the average activity to our evaluation as current popularity data is even more rarely to get from nearby places.
+ 
  ### Relevance of Search Results
- To identify supermarkets and grocery stores we use the predefined location types (https://developers.google.com/places/supported_types). However, as some companies define themselfes as grocery stores while they're actually predomantly selling hygiene products  and are closer to being pharmacies 
+ To identify supermarkets and grocery stores we use the predefined location types (https://developers.google.com/places/supported_types). However, as some companies define themselfes as grocery stores while they're actually selling health and beauty products the top result could be useless for the user.
+ 
+ 
