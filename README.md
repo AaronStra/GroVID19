@@ -9,12 +9,16 @@ This graph shows the loads on supermarkets in Singapore on the 29th of March, 20
 By asking the user to type in an address, a type of store and a search radius we are able to give an advice to visit the currently least crowded store.
 
 ## How to get started
++ Clone/Download this repository
 + Get a Google Maps API key https://developers.google.com/places/web-service/get-api-key
-+ replace the dummy API key in the GroVID19 Python code with your own key
++ Replace the dummy API key in the GroVID19 Python code with your own key
 + Install Populartimes from github using `pip install --upgrade git+https://github.com/m-wrzr/populartimes`
 + Install NumPy using `pip install numpy`
-+ Install Flask (Please add input for this Sanket)
-+ Run the HTML File (Please add input for this Sanket)
++ Install Flask `pip install flask`
++ Open a console and change the directory to the GroVID19 directory
++ Enter `export FLASK_APP=grovid19_v2.py`
++ Enter `flask run`
++ Open `home.html`in the browser of your choice
   
  ## Example Call
 Insert Example Call here.
