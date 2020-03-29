@@ -4,9 +4,9 @@ We tackeld the issue of panic buying during the Covid19 pandemic in early 2020. 
 
 The graph below shows the loads on supermarkets in Singapore on the 29th of March, 2020 at 1 pm. There was no noticable panic buying going on in Singapore. However, there is a noticable mismatch between the loads of different grocery stores.
 ![Marina Graphic](/images/MarinaBaySands_Data.png)
-For customers this is not too big of problem besides the crowd itself and longer queuing times. However, in times of panic buying this could mean that people heading to crowded stores won't find basic goods anymore.
+For customers this is not too big of a problem besides the crowd itself and longer queuing times. However, in times of panic buying this could mean that people heading to crowded stores won't find basic goods anymore.
 
-Experience shows that panic buying seems to be an acute situation. We made the assumption that in such a case the activity at grocery stores may be skewed towards earlier hours in the day, but a relatively low loaded store will also be less loaded than others in times of shortage.
+Panic buying seems to be an acute situation. We made the assumption that in such a case the activity at grocery stores may be skewed towards earlier hours in the day, but a relatively low loaded store will also be less loaded than others in times of shortage.
 
 ## How to get started
 + Clone/Download this repository
@@ -38,15 +38,23 @@ By clicking the link the user can see the place on google maps.
 ![MapsResultScreen](/images/MapsResult.png)
 
  ## Limitations
- The usefulness of our tool depends on the following factors:
+ The usefulness of the current version our tool depends on the following factors:
  
  ### Accuracy of Google Maps activity data
- The reliability of googles popular times data can be questioned as it is done here https://www.linkedin.com/pulse/how-accurate-googles-popular-time-function-m%C3%A9lissa-sanchot. Compared with evaluations based on camera footage the Google results seem to lack major features of the actual activity.
+ The reliability of google's popular times data can be questioned as it is done here https://www.linkedin.com/pulse/how-accurate-googles-popular-time-function-m%C3%A9lissa-sanchot. Compared with evaluations based on camera footage the Google results seem to lack major features of the actual activity.
  
  ### Availability of Popular Times Data
- Depending on the region, popular times data could be scarce. We already added the average activity to our evaluation as current popularity data is even harder to get from nearby places.
+Depending on the region, popular times data could be scarce. We already added the average activity to our evaluation as current popularity data is even harder to get from nearby places.
  
  ### Relevance of Search Results
- To identify supermarkets and grocery stores we use the predefined location types (https://developers.google.com/places/supported_types). However, as some companies define themselfes as grocery stores while they're actually selling health and beauty products the top result could be useless for the user.
+To identify supermarkets and grocery stores we use the predefined location types (https://developers.google.com/places/supported_types). However, as some companies define themselfes as grocery stores while they're actually selling health and beauty products or are actually petrol stations the top result could be useless for the user.
+
+## Potential Improvements and Extensions
+### Giving the User more Choice
+Alternatively to showing the least crowded store it would be possible to present a ranking of stores. This way the user can adjust the selection scheme to his needs. Also useless picks like discussed recently would be omitted by the user.
+
+### Gather and Evaluate Data independently of Google
+
+
  
  
