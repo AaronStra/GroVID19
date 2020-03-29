@@ -1,5 +1,5 @@
 # GroVID19
-This tool was created in the framework of the CodeVsCovid19 Hackathon.
+This tool was created during the CodeVsCovid19 Hackathon.
 We tackeld the issue of panic buying during the Covid19 pandemic in early 2020. As people started stocking toilet paper and other basic goods an even distribution of shoppers to grocery stores can help to alleviate temporary shortages. We hope to achieve this by pointing users to stores in their surroundings that are the least crowded. We use realtime activity data if available and average activity data to complement. We used the Google Maps Places API (https://developers.google.com/places/web-service/intro?hl=de) together with the on top built Populartimes library (https://github.com/m-wrzr/populartimes) to use the first's popular times feature.
 
 The graph below shows the loads on supermarkets in Singapore on the 29th of March, 2020 at 1 pm. There was no noticable panic buying going on in Singapore. However, there is a noticable mismatch between the loads of different grocery stores.
