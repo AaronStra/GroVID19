@@ -14,3 +14,12 @@ By asking the user to type in an address, a type of store and a search radius we
   
  ## Example Call
 Insert Example Call here.
+
+ ## Limitations
+ The usefulness of our tool depends on the following factors:
+ 
+ ### Accuracy of Google Maps activity data
+ The reliability of googles popular times data can be questioned as it is done here https://www.linkedin.com/pulse/how-accurate-googles-popular-time-function-m%C3%A9lissa-sanchot. Compared with evaluations based on camera footage the Google results seem to lack major features of the actual activity.
+ 
+ ### Relevance of Search Results
+ To identify supermarkets and grocery stores we use the predefined location types (https://developers.google.com/places/supported_types). However, as some companies define themselfes as grocery stores while they're actually predomantly selling hygiene products  and are closer to being pharmacies 
