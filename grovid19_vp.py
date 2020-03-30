@@ -34,7 +34,7 @@ def error(about):
     return 'there has been an error: %s' % about
 
 # Run Store Search and Selection
-@app.route('/grovid19_v1',methods = ['POST', 'GET'])
+@app.route('/grovid19_vp',methods = ['POST', 'GET'])
 def grovid19_v1():
     if request.method == 'POST':
         # Import User Input
